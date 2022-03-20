@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <h1 id="title">DEVs Registration</h1>
+        <br>
+        <p id="subtitle">Fill out this form with your information</p>
+        <br>
+
+    <form>
+        <fieldset class="group">
+            <div class="field">
+                <label for="name"><strong>Name</strong></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="field">
+                <label for="last name"><strong>Last Name</strong></label>
+                <input type="text" name="last name" id="last name" required>
+            </div>
+        </fieldset>
+
+        <div class="field">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="field">
+            <label><strong>Which of the following do you work with?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="backend" checked>Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="frontend">Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+
+        <div class="field">
+            <label for="level"><strong>What's your level?</strong></label>
+            <select id="level">
+                <option selected disabled value="">Select</option>
+                <option>Junior</option>
+                <option>Full</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset class="group">
+            <div id="check">
+                <label><strong>Select the languages you use the most</strong></label>
+                <br>
+                <br>
+                <input type="checkbox" id="language1" name="language1" value="HTML">
+                <label for="language1">HTML</label>
+                <input type="checkbox" id="language2" name="language2" value="CSS">
+                <label for="language2">CSS</label>
+                <input type="checkbox" id="language3" name="language3" value="Javascript">
+                <label for="language3">JavaScript</label>
+                <input type="checkbox" id="language3" name="language4" value="PHP">
+                <label for="language4">PHP</label>
+                <input type="checkbox" id="language5" name="language5" value="C#">
+                <label for="language5">C#</label>
+                <input type="checkbox" id="language6" name="language6" value="Phyton">
+                <label for="language6">Phyton</label>
+                <input type="checkbox" id="language7" name="language7" value="Java">
+                <label for="language7">Java</label>
+            </div>
+        </fieldset>
+
+        <div class="field">
+            <br>
+            <label for="experience"><strong>Tell us about your experience</strong></label>
+            <textarea rows="6" style="width: 26em;" id="experience" name="experience"></textarea>
+        </div>
+             
+        <button class="button" type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
